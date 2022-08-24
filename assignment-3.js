@@ -11,10 +11,10 @@ console.log(ages[ages.length -1] - ages[0])
 
 // c.	Use a loop to iterate through the array and calculate the average age. Print the result to the console.
 let sum = 0;
-    for(let i = 0; i < ages.length; i++) {
-        sum+= ages[i];
-    }
-    console.log(Math.round(sum/ages.length))
+for(let i = 0; i < ages.length; i++) {
+    sum+= ages[i];
+}
+console.log(Math.round(sum/ages.length))
 
 // 2.	Create an array called names that contains the following values: : ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
 const names = ["Sam","Tommy","Tim","Sally","Buck","Bob"]
@@ -48,13 +48,13 @@ console.log(boxingPunches[0]);
 // 5.	Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
 let nameLengths = [];
 for(i = 0; i < names.length; i++){
-nameLengths[i] = names[i].length;
+    nameLengths[i] = names[i].length;
 }
 
 // 6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
 let nameLengthsSum = 0;
 for(let i = 0; i < nameLengths.length; i++){
-nameLengthsSum += nameLengths[i];    
+    nameLengthsSum += nameLengths[i];    
 }
 console.log(nameLengthsSum);
 
@@ -62,8 +62,7 @@ console.log(nameLengthsSum);
 function repeatWord(word, n) {
     let string = '';
     for(let i = 0; i < n; i++){
-
-            string += word;
+        string += word;
     }
     return string;
 }
@@ -116,7 +115,7 @@ function isCarOnList(list, car){
             return true;
         }
     }
-        return false; 
+    return false; 
 }
 let carList = ["Viper","Charger","Challenger","Mustang","Dart"]
 console.log(isCarOnList(carList, "charger"));
